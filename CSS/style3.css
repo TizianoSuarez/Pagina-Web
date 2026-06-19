@@ -1,0 +1,274 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 80px;
+}
+
+main {
+  background-color: #cca43b;
+  padding-bottom: 1px;
+}
+body {
+  background-color: #cca43b;
+  color: #e5e5e5;
+}
+.encabezado {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #cca43b;
+}
+
+.encabezado a {
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
+.encabezado img {
+  width: 125px;
+  height: 195px;
+  transition: 0.5s ease-in-out;
+}
+
+.encabezado .logo:hover {
+  filter: drop-shadow(10px 15px 15px #0031b0);
+  transform: translateY(-5px);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.menu a {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.menu a:hover {
+  padding: 10px;
+  background: #e10600;
+  border-radius: 25px;
+}
+
+.logo {
+  background-image: url(../SRC/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 75px;
+  height: 95px;
+  margin-left: 25px;
+  animation: logotipo 10s ease-in-out infinite;
+}
+
+@keyframes logotipo {
+  from {
+    background-image: url(../SRC/logo.png);
+    transform: scale(1);
+  }
+
+  to {
+    background-image: url(../SRC/logo2.png);
+    transform: scale(1);
+  }
+}
+.mapa {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto {
+  background-color: #cca43b;
+  color: rgb(0, 0, 0);
+  padding: 40px 20px;
+  text-align: center;
+  width: auto;
+  align-items: center;
+}
+
+.footer-nuevo {
+  background-color: #111;
+  color: white;
+  padding: 40px 20px 10px;
+}
+
+.footer-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-contenedor div {
+  min-width: 200px;
+}
+
+.footer-nuevo h2 {
+  margin-bottom: 10px;
+  color: white;
+}
+.footer-nuevo h3 {
+  margin-bottom: 10px;
+}
+
+.footer-nuevo a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+
+.footer-nuevo a:hover {
+  color: #00bfff;
+}
+
+.footer-copy {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 14px;
+}
+.footer-logo img {
+  max-width: 180px;
+}
+.mapa {
+  text-align: center;
+}
+
+.mapa iframe {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.formulario-contacto button {
+  background-color: #e10600;
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 6px;
+  color: #1f1f1f;
+}
+form textarea {
+  height: 120px;
+  resize: none;
+}
+
+form button:hover {
+  background-color: #990000;
+}
+form input,
+form textarea {
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 2px solid #111111;
+}
+
+.conteform {
+  background-color: #ffffff;
+  max-width: 550px;
+  margin: 30px auto;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 45px;
+  color: #1f1f1f;
+}
+
+@media (max-width: 550px) {
+  .encabezado {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-bottom: 15px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu a {
+    margin: 15px;
+    font-size: 20px;
+  }
+
+  .footer-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-contenedor div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-logo img {
+    max-width: 150px;
+    height: auto;
+  }
+
+  .footer-links a,
+  .footer-social a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  .conteform {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+}

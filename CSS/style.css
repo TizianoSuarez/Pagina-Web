@@ -1,0 +1,251 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 80px;
+}
+
+main {
+  background-color: #cca43b;
+  padding-bottom: 1px;
+}
+body {
+  background-color: #cca43b;
+  color: #e5e5e5;
+}
+.encabezado {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #cca43b;
+}
+
+.encabezado a {
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
+.encabezado img {
+  width: 125px;
+  height: 195px;
+  transition: 0.5s ease-in-out;
+}
+
+.encabezado .logo:hover {
+  filter: drop-shadow(10px 15px 15px #0031b0);
+  transform: translateY(-5px);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.menu a {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.menu a:hover {
+  padding: 10px;
+  background: #e10600;
+  border-radius: 25px;
+}
+
+.logo {
+  background-image: url(../SRC/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 75px;
+  height: 95px;
+  margin-left: 25px;
+  animation: logotipo 10s ease-in-out infinite;
+}
+
+@keyframes logotipo {
+  from {
+    background-image: url(../SRC/logo.png);
+    transform: scale(1);
+  }
+
+  to {
+    background-image: url(../SRC/logo2.png);
+    transform: scale(1);
+  }
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #111111;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px #e10600;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 25px;
+  padding: 20px;
+}
+
+.np {
+  color: #1f1f1f;
+  text-align: center;
+}
+
+.footer-nuevo {
+  background-color: #111;
+  color: white;
+  padding: 40px 20px 10px;
+  margin-top: 0px;
+}
+
+.footer-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-contenedor div {
+  min-width: 200px;
+}
+
+.footer-nuevo h2,
+.footer-nuevo h3 {
+  margin-bottom: 10px;
+}
+
+.footer-nuevo a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+
+.footer-nuevo a:hover {
+  color: #00bfff;
+}
+
+.footer-copy {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 14px;
+}
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.footer-logo img {
+  max-width: 180px;
+}
+.btn-arriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #cca43b; 
+  color: #fff;
+  padding: 12px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+  transition: all 0.3s ease;
+}
+
+.btn-arriba:hover {
+  background: #333;
+}
+@media (max-width: 550px) {
+  .encabezado {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-bottom: 15px;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px auto;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu a {
+    margin: 15px;
+    font-size: 20px;
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .footer-contenedor {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-logo img {
+    max-width: 130px;
+    height: auto;
+  }
+
+  .footer-nuevo a {
+    margin-bottom: 8px;
+  }
+}

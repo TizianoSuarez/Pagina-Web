@@ -1,0 +1,252 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 80px;
+}
+
+main {
+  background-color: #cca43b;
+  font-family: sans-serif;
+}
+body {
+  background-color: #cca43b;
+  color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.encabezado {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #cca43b;
+}
+
+.encabezado a {
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
+.encabezado img {
+  width: 125px;
+  height: 195px;
+  transition: 0.5s ease-in-out;
+}
+
+.encabezado .logo:hover {
+  filter: drop-shadow(10px 15px 15px #0031b0);
+  transform: scale(1.2);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-family: sans-serif;
+}
+
+.menu a {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.menu a:hover {
+  padding: 10px;
+  background: #e10600;
+  border-radius: 25px;
+}
+
+.logo {
+  background-image: url("../SRC/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 70px;
+  height: 70px;
+  margin-left: 25px;
+  animation: logotipo 10s ease-in-out infinite alternate;
+  display: inline-block;
+  transition:
+    transform 0.3s ease-in-out,
+    filter 0.3s ease-in-out;
+}
+
+@keyframes logotipo {
+  from {
+    background-image: url(../SRC/logo.png);
+    transform: scale(1);
+  }
+
+  to {
+    background-image: url(../SRC/logo2.png);
+    transform: scale(1);
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1f1f1f;
+}
+
+section img {
+  height: 50vh;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+section img:hover {
+  filter: drop-shadow(5px 5px 10px black);
+  transform: scale(1.1);
+  border-color: #111111;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 45px;
+  color: #1f1f1f;
+}
+
+
+
+.footer-nuevo {
+  background-color: #111;
+  color: white;
+  padding: 40px 20px 10px;
+  margin-top: 40px; 
+}
+
+.footer-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-contenedor div {
+  min-width: 200px;
+}
+
+.footer-nuevo h2 {
+  margin-bottom: 10px;
+  color: white;
+}
+.footer-nuevo h3 {
+  margin-bottom: 10px;
+}
+
+.footer-nuevo a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+
+.footer-nuevo a:hover {
+  color: #00bfff;
+}
+
+.footer-copy {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 14px;
+}
+.footer-logo img {
+  max-width: 180px;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  flex: 1;
+}
+
+.galeria img {
+  width: 250px;
+  height: 180px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 550px) {
+  .encabezado {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-bottom: 15px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu a {
+    margin: 15px;
+    font-size: 20px;
+  }
+
+  .footer-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-contenedor div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-logo img {
+    max-width: 150px;
+    height: auto;
+  }
+
+  .footer-links a,
+  .footer-social a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  .conteform {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+}
